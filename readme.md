@@ -20,7 +20,7 @@
 
 If you'd like to support this project, donations are greatly appreciated! Every bit helps with further development and maintenance.
 
-**Litecoin Address**: `Lc8BMFu5fnCNVLuyFi5Va6WjL6MFEBX9oG`
+## **Litecoin Address**: `Lc8BMFu5fnCNVLuyFi5Va6WjL6MFEBX9oG`
 
 Thank you for your support!
 
