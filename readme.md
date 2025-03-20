@@ -27,7 +27,7 @@ Thank you for your support!
 
 ## Contact The Creator
 
-**Dm me on discord `lunarmart`.**
+**Dm me on discord `x74a`**
 
 ## Want A Custom Tool
 
